@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+@media (max-width:1400px){
+    .scene01 {
+        max-width: 1200px;
+    }
+    .nav {
+        width: 50%;
+    }
+    .planet-stroy .red {
+        left: 800px;
+    }
+}
+@media (max-width:1200px) {
+    .gallery_container {
+        max-width: 960px;
+        padding: 0;
+    }
+    .scene01 {
+        max-width: 960px;
+    }
+    .planet-stroy02 .saturns {
+        left: 800px;
+    }
+    .planet-stroy .red {
+        width: 67px;
+        left: 800px;
+    }
+    .planet-stroy .red .view {
+        left: -175px;
+    }
+    @keyframes rocket {
+        100% {
+            transform: translate(230%,-100%);
+        }
+    }
+}
+@media (max-width :990px) {
+    .gallery_container {
+        max-width: 720px;
+    }
+    .filter_title h2 {
+        margin-bottom: 30px;
+    }
+    .filter_box {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .filter_bg .color_item ul li div {
+        width: 100%;
+    }
+    .filter_bg .color_item select {
+        width: 100%;
+    }
+    .filter_bg .color_item {
+        width: 100%;
+    }
+    .filter_bg .color_item a {
+        width: 24%; height: 150px;
+    }
+    .filter_bg .color_item a:nth-child(4n) {
+        margin-right: 0;
+    }
+    .filter_box {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .item {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+    .gallery {
+        padding-top: 50px;
+        flex: 0 0 100%;
+    }
+    .reset_btn {
+        margin-top: 10px;
+    }
+    .reset_btn > button {
+        width: 100%;
+        height: 90px;
+    }
+}
+@media (max-width :960px) {
+    .nav ul li {
+        margin-top: 20px;
+    }
+    .nav ul li a {
+        width: 100px;
+    }
+    .nav ul li:nth-child(2) a {
+        width: 130px;
+    }
+    .scene01 {
+        max-width: 720px;
+    }
+    .rocket {
+        width: 250px;
+    }
+    @keyframes rocket {
+        100% {
+            transform: translate(217%,-140%);
+        }
+    }
+    .rocket img {
+        width: 250px;
+    }
+    .scene01 .title .logo img {
+        width: 425px;
+    }
+    .scene01 .title .ufo img {
+        width: 100px;
+    }
+    .planet-stroy .pink {
+        width: 50px;
+        left: 0;
+    }
+    .planet-stroy .red {
+        left: 500px;
+    }
+    .planet-stroy .purple {
+        left: 100px;
+    }
+    .planet-stroy02 .mars {
+        left: 50px;
+    }
+    .planet-stroy02 .saturns {
+        width: 220px;
+        left: 460px;
+    }
+    .planet-stroy02 .blue {
+        width: 270px;
+        left: 220px;
+    }
+    body.on .scene01 .title .ufo {
+        transform: translate(-250%,-170%);
+    }
+    .moon {
+        bottom: 40px;
+        left: 117px;
+        width: 500px;
+    }
+    .gold_cat {
+        width: 80px;
+        top: -316px;
+        left: 352px;
+    }
+    .supercat {
+        top: -370px;
+        left: 349px;
+        width: 150px;
+    }
+    .galaxy_cat {
+        width: 100px;
+        top: -286px;
+        left: 457px;
+    }
+}
+@media (max-width:720px) {
+    .gallery_container {
+        max-width: 659px;
+        padding: 0;
+    }
+    .item {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .scene01 {
+        max-width: 640px;
+    }
+    .rocket {
+        display: none;
+    }
+}
+@media (max-width:640px) {
+    .container {
+        width: 100%;
+    }
+    .planet-stroy .red {
+        left: 400px;
+    }
+}
+@media (max-width: 460px) {
+    .container {
+        height: 300vh;
+    }
+    body {
+        cursor: auto;
+    }
+    .cursor {
+        display: none;
+    }
+    .start_bgm {
+        width: 250px; height: 250px;
+    }
+    .nav {
+        width: 25%;
+    }
+    .nav ul {
+        padding-right: 10px;
+    }
+    .nav ul li {
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    .nav ul li:nth-child(1) > a {
+        width: 75px;
+    }
+    .nav ul li:nth-child(2) a {
+        width: 100px;
+    }
+    .nav ul li a {
+        width: 100px;
+    }
+    .cat {
+        bottom: -25px;
+        left: -25px;
+    }
+    .cat img {
+        width: 150px;
+    }
+    .rocket {
+        display: none;
+    }
+    .first_scene .title {
+        transform: translate(-50%,-63%) scale(0.7);
+    }
+    .scene01 .title .logo img {
+        width: 250px;
+    }
+    .scene01 {
+        max-width: 320px;
+    }
+    .scene01 .title .ufo img {
+        width: 75px;
+    }
+    body.on .scene01 .title .ufo {
+        transform: translate(-220%,-170%);
+    }
+    .planet-stroy .pink {
+        left: 0;
+    }
+    .planet-stroy .purple {
+        top: 837px;
+        right: 0;
+    }
+    .planet-stroy .red {
+        top: 684px;
+        left: unset; right: 40px;
+    }
+    .planet-stroy .pink .view {
+        width: 320px;
+        height: 114px;
+        top: 50px;
+        left: 0px;
+    }
+    .planet-stroy .purple .view {
+        width: 320px;
+        height: 114px;
+        top: 100px;
+        left: -100px;
+    }
+    .planet-stroy02 .mars .view {
+        width: 320px;
+        height: 114px;
+        top: 85px;
+        left: 75px;
+        top: 120px;
+        left: 0px;
+    }
+    .planet-stroy .red .view {
+        width: 320px; height: 114px;
+        left: -210px;
+    }
+    .planet-stroy02 .mars {
+        width: 120px;
+        top: 250px;
+        left: 0;
+    }
+    .planet-stroy02 .blue {
+        left: 0;
+    }
+    .planet-stroy02 .saturns {
+        width: 200px;
+        top: 510px;
+        left: 100px;
+    }
+    .planet-stroy02 .blue {
+        width: 270px;
+        top: 840px;
+    }
+    .gallery_planet {
+        top: 250px;
+    }
+    .earth {
+        width: 100px;
+        top: 600px;
+    }
+    .scene01 .earth img:nth-child(1) {
+        width: 100px;
+    }
+    .view_desc {
+        padding-left: 100px;
+        height: 114px;
+    }
+    .view_desc p {
+        font-size: 14px;
+    }
+    .moon_cat {
+        display: none;
+    }
+}

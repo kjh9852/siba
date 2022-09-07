@@ -1,0 +1,295 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Maplestory';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maplestory';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* scroll bar */
+body::-webkit-scrollbar {
+    width: 20px;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+	background-clip: padding-box;
+    height: 10%; /* 스크롤바의 길이 */
+    background-color: #354234; /* 스크롤바의 색상 */
+	border: 3px solid #fff;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: #354234;  /*스크롤바 뒷 배경 색상*/
+	border-radius: 10px;
+}
+/* ::-webkit-scrollbar-button:vertical:increment {
+    background: url(../img/a.png) no-repeat center 50%;
+}
+::-webkit-scrollbar-button:vertical:decrement {
+    background: url(arrow_up.png) no-repeat center 50%;
+} */
+
+body {   
+	background: rgba(53, 66, 52,0.5);
+}
+/* gallery */
+.gallery_container {
+    position: relative;
+    overflow: hidden;
+    max-width: 1700px;
+    padding: 0 130px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.filter_title {
+    padding-top: 30px;
+    line-height: 2.5rem;
+    letter-spacing: 0.5px;
+    flex: 0 0 100%;
+    width: 100%;
+}
+.filter_title h2 {
+    text-align: center;
+    padding-left: 30px;
+    font-size: 2.6rem;
+    color: #fff;
+    font-family: 'Maplestory';
+}
+.filter_box {
+    position: relative;
+    flex: 0 0 20%;
+    padding-top: 30px;
+    max-width: 20%;
+}
+
+.filter_bg {}
+
+.filter_bg .color_item {
+    width: 200px;
+}
+.filter_bg .color_item select {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    appearance: none;
+    border: none;
+    color: #fff;
+    font-family: 'Maplestory';
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.filter_bg .color_item select option {
+    background-color: #fff;
+    font-weight: bold;
+    color: #000;
+}
+.filter_bg .color_item p {
+    color: #fff;
+}
+.filter_bg .color_item ul li div {
+    position: relative;
+    width: 200px;
+    margin-bottom: 20px;
+    border-bottom: solid 2px #fff;
+    box-sizing: border-box;
+}
+.filter_bg .color_item ul li div::before,
+.filter_bg .color_item ul li div::after {
+    content: '';
+    position: absolute;
+    top: 10px; right: 0px;
+    width: 2px; height: 10px;
+    background: #fff;
+    transition: .2s ease-in-out;
+}
+.filter_bg .color_item ul li div::before {
+    transform: rotate(-135deg);
+    right: 6px;
+}
+.filter_bg .color_item ul li div::after {
+    transform: rotate(-45deg);
+    right: 12px;
+}
+.filter_bg .color_item ul li:last-child div {
+    border-bottom: 0;
+}
+.filter_bg .color_item ul li:last-child div::before,
+.filter_bg .color_item ul li:last-child div::after {
+    display: none;
+}
+.filter_bg .color_item ul li div.on::before {
+    transform: rotate(-225deg);
+}
+.filter_bg .color_item ul li div.on::after {
+    transform: rotate(45deg);
+}
+.filter_bg .color_item ul li input {
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: 'Maplestory';
+    color: #fff;
+    font-size: 1.2rem;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:focus {
+    outline: none;
+}
+input::placeholder {
+    font-weight: bold;
+    color: #fff;
+}
+
+.gallery {
+    padding-top: 25px;
+    flex: 0 0 80%;
+    width: 75%;
+}
+
+.gallery>div:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    padding: 0 15px;
+    flex: 0 0 33.3333333%;
+    max-width: 33.3333333%;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.item img {
+    border-radius: 20px;
+}
+.item > a {
+    display: block;
+    width: 100%;
+}
+.item > a > img {
+    height: auto;
+} 
+.item p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 15px 0;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Maplestory';
+}
+
+.reset_btn {
+    margin-top: 30px;
+}
+
+.reset_btn > button {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Maplestory';
+    font-size: 1.4rem;
+    border-radius: 10px;
+    background: #fff;
+    transition: .3s ease-in-out;
+}
+
+.reset_btn>button:hover {
+    background: #fff;
+}
+.search_box {
+    width: 145px;
+}
+
+.loader-wrapper {
+	text-align: center;
+}
+
+.loader-wrapper.hide {
+	display: none !important;
+}
+
+.lds-ellipsis {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.lds-ellipsis div {
+	position: absolute;
+	top: 33px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #354234;
+	animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+	left: 8px;
+	animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+	left: 8px;
+	animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+	left: 32px;
+	animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+	left: 56px;
+	animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes lds-ellipsis3 {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+@keyframes lds-ellipsis2 {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(24px, 0);
+	}
+}
+
+.gallery .data h5 {
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+.visible {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
