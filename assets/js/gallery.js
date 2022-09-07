@@ -21,7 +21,7 @@ var reachedBottom = false;
 var stopScroll = false;
 var isFilter = false;
 
-fetch(`../../siba.json`)
+fetch(`https://kjh9852.github.io/siba/siba.json`)
 	.then(function (response) {
 		return response.json();
 	})
